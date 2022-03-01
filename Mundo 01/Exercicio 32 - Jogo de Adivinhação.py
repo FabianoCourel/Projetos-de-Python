@@ -23,3 +23,5 @@ else:
     pygame.mixer.music.load('Errou.mp3')
     pygame.mixer.music.play()
     pygame.event.wait()
+
+#O Som só vai tocar com arquivo mp3 incluso na pasta
