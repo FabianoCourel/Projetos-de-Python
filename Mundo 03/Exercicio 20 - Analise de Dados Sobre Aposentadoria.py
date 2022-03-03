@@ -1,7 +1,10 @@
+from datetime import date
+ano = date.today().year
 cadastro = {}
 #Considerando que são 30 anos de contribuição para aposentar!
 cadastro['Nome:'] = str(input('Nome: '))
-nasc = cadastro['Nascimento:'] = int(input('Nascimento: '))
+nasc = int(input('Nascimento: '))
+cadastro['Idade:'] = ano - nasc
 n = cadastro['Carteira de Trabalho:'] = int(input('Número da carteira de trabalho'
                                               '\nCaso não houver registros preencha com 0: '))
 if n != 0:
