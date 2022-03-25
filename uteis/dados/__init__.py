@@ -8,3 +8,13 @@ def leiaDinheiro(msg):
         else:
             return float(entrada)
             break
+
+def leiaInt(msg):
+    while True:
+        try:
+            opc = int(input(msg))
+        except (ValueError, TypeError, KeyboardInterrupt):
+            cores.vermelho('Erro! Digite corretamente o tipo do dado solicitado.')
+        else:
+            return opc
+            break
